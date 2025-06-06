@@ -13,9 +13,13 @@ A responsive and modern landing page developed using **HTML**, **CSS**, and **Ja
 ## 📁 Project Structure
 
 ├── 📁 Javascript/ javascript.js
+
 ├── 📁 Media/ (images, icons, etc.)
+
 ├── 📁 Styles/ style.css
+
 ├── 📄 index.html
+
 └── 📄 README.md
 
 
