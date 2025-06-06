@@ -22,6 +22,8 @@ Key highlights include multiple engaging sections such as Features, Community, C
 
 ├── 📄 index.html
 
+├── 📄 LICENSE.txt
+
 └── 📄 README.md
 
 
