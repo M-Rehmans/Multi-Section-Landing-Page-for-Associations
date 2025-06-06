@@ -1,0 +1,707 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --primary: #1F292D;
+    --primaryLight: #2c363a;
+    --snow_White: #f8fbfd;
+    --secondary: #F5F7FA;
+}
+
+body {
+    color: var(--primary);
+}
+
+/* Text Shadow */
+p {
+    text-shadow: 1px 1px 10px #1f292d31;
+}
+
+/* Image Shadow */
+img {
+    filter: drop-shadow(0 0 6px #1f292d6c);
+}
+
+/* Display flex */
+.navbar,
+.logo,
+.heroSection .Frame,
+.clients,
+.clients .Frame,
+.Community,
+.communityFrame,
+.clients .comapnyLogos,
+.communityFrame2,
+.Unlock>.Frame {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Flex Direction column */
+.heroSection .Frame,
+.clients .Frame,
+.Community,
+.communityFrame,
+.Unlock>.Frame {
+    flex-direction: column;
+}
+
+/* Display Grid */
+.bnt-links-box,
+.heroSection,
+.Unlock {
+    display: grid;
+    gap: 10px;
+}
+
+/* anchor text stylation */
+a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+/* Ul stylation */
+ul {
+    list-style: none;
+}
+
+nav {
+    position: fixed;
+    background-color: var(--snow_White);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 100%;
+    z-index: 2;
+}
+
+.hambuger-Box {
+    display: none;
+    align-items: center;
+    gap: 30px;
+}
+
+.hambuger-Box .fa-bars {
+    font-size: 1.5rem;
+    color: var(--primary);
+    display: none;
+}
+
+.navbar {
+    width: 90%;
+    margin: auto;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.logo>p {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.bnt-links-box {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.btn-link,
+.btn-Register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 50px;
+    transition: all 0.4s ease-in;
+}
+
+.btn-link {
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.nav-links {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: all 0.4s ease-in;
+}
+
+.btn-link:hover {
+    background-color: var(--primary);
+    box-shadow: rgba(0, 0, 0, 0.34) 0px 3px 8px;
+
+    .nav-links {
+        color: var(--snow_White);
+    }
+}
+
+.btn-Register {
+    background-color: var(--primary);
+    color: var(--snow_White);
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s;
+    border-radius: 8px;
+}
+
+.bnt-links-box .btn-Register {
+    display: none;
+}
+
+/* Hero Section */
+.heroSection {
+    background-color: var(--secondary);
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 9% 6% 4%;
+}
+
+.heroSection .Frame {
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.heroSection .Frame>:first-child {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.heroSection .Frame .btn {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+}
+
+.heroSection img {
+    width: 80%;
+    justify-self: end;
+    z-index: 1;
+}
+
+/* Clients Section */
+.clients {
+    flex-direction: column;
+    padding: 6%;
+    gap: 50px;
+}
+
+.frameTitle {
+    font-size: 2rem;
+    font-weight: 450;
+}
+
+.clients .comapnyLogos {
+    gap: 30px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Community Section */
+.Community {
+    padding: 4% 6%;
+    gap: 40px;
+}
+
+.communityFrame .frameTitle {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.communityFrame2 {
+    width: 100%;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 20px;
+}
+
+.communityFrameBox {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 28%;
+    padding: 20px;
+    gap: 10px;
+}
+
+.communityFrameBox> :nth-child(3) {
+    margin-top: 20px;
+}
+
+.cF2Box1,
+.cF2Box2,
+.cF2Box3 {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 8px;
+}
+
+.communityFrameBox> :nth-child(2) {
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+
+/* Unlock Section */
+.Unlock {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 30px;
+    align-items: center;
+    padding: 6%;
+}
+
+.Unlock .Frame {
+    align-items: flex-start;
+    gap: 15px;
+}
+
+/* Achievementa */
+.Achievements {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 8% 6%;
+}
+
+.achievFrame> :first-child {
+    margin-bottom: 20px;
+}
+
+.countsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    row-gap: 30px;
+    place-items: start;
+}
+
+.countBox {
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 0px;
+}
+
+.countBox>i {
+    grid-area: 1/1/3/2;
+    font-size: 2.4rem;
+    align-self: center;
+}
+
+/* Customers */
+.Customers {
+    display: flex;
+    padding: 6%;
+    gap: 25px;
+    align-items: center;
+    background-color: var(--secondary);
+}
+
+.Customers>img {
+    border-radius: 10px;
+    width: 30%;
+}
+
+.customerFrame {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.customerFrame>:nth-child(2) {
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+
+.CustomerLogos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.CustomerLogos>a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+/* FooterTop Section */
+.footerTopFrame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6%;
+    gap: 30px;
+}
+
+.footerTopFrame>:first-child {
+    text-align: center;
+    width: 50%;
+}
+
+/* Footer Section */
+footer {
+    background-color: var(--primary);
+    color: var(--secondary);
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr 0.7fr auto;
+    align-items: start;
+    justify-items: start;
+    gap: 10px;
+    padding: 6%;
+    margin: auto;
+}
+
+footer a {
+    color: var(--secondary);
+}
+
+.navbaLinks1 {
+    grid-area: 1/2/4/3;
+}
+
+.navbaLinks2 {
+    grid-area: 1/3/4/4;
+}
+
+.feedBacks {
+    grid-area: 1/4/4/5;
+}
+
+.navbarLinks p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: 550;
+}
+
+.socialLinks {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.socialLinks i {
+    font-size: 1.5rem;
+}
+
+.feedBacks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feedBacks input {
+    background-color: var(--primaryLight);
+    border: none;
+    outline: none;
+    padding: 10px 48px 10px 10px;
+    color: var(--secondary);
+    caret-color: var(--secondary);
+}
+
+.relat {
+    position: relative;
+}
+
+.relat button {
+    background-color: var(--primaryLight);
+    border: none;
+    color: var(--snow_White);
+    border-left: 1px solid #4a5255;
+    border-radius: 2px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 40px;
+}
+
+.Unlock img {
+    width: 100%;
+}
+
+/* Media Query */
+/* Large devices (laptops/desktops, 992px and up) */
+@media (max-width: 1024px) {
+    .navbar {
+        width: 100%;
+    }
+
+    .bnt-links-box .btn-Register {
+        display: none;
+    }
+
+    .hambuger-Box .fa-bars {
+        display: block;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (max-width: 834px) {
+    .navbar {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-height: fit-content;
+    }
+
+    .hambuger-Box {
+        display: block;
+        grid-area: 1/2;
+        text-align: end;
+    }
+
+    .bnt-links-box {
+        display: flex;
+        flex-direction: column;
+        padding: 2px 8px;
+        grid-column: 1 / span 2;
+        overflow: hidden;
+    }
+
+    .register-Btn {
+        display: none;
+    }
+
+    .bnt-links-box {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    }
+
+    .bnt-links-box .btn-Register {
+        display: flex;
+    }
+
+    .bnt-links-box.active {
+        opacity: 1;
+        display: flex;
+        max-height: 500px;
+    }
+
+    .communityFrame2 {
+        gap: 0px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .communityFrameBox {
+        width: 80%;
+    }
+
+    .Unlock img {
+        width: 80%;
+    }
+
+    .Achievements {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .Achievements .achievFrame {
+        text-align: center;
+    }
+
+    .Achievements .countBox i {
+        font-size: 1.8rem;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (max-width: 768px) {
+    .Unlock {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+
+    .heroSection {
+        padding-top: 14%;
+    }
+
+    .countsContainer {
+        width: 100%;
+        justify-content: space-between;
+        place-items: start;
+    }
+
+    .frameTitle {
+        font-size: 1.8rem;
+    }
+
+    .Customers {
+        display: block;
+        padding: 6%;
+    }
+
+    .Customers>img {
+        float: right;
+        width: 50%;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    .customerFrame {
+        display: block;
+    }
+
+    .footerTopFrame>:first-child {
+        width: 70%;
+    }
+}
+
+@media (max-width: 580px) {
+    .heroSection {
+        display: flex;
+        flex-direction: column;
+        padding-top: 22%;
+    }
+
+    .clients {
+        gap: 45px;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .clients p {
+        text-align: center;
+    }
+
+    .clients .comapnyLogos {
+        gap: 10px;
+    }
+
+    .Community {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .communityFrame .frameTitle {
+        width: 100%;
+    }
+
+    .footerLogo {
+        grid-area: 1/1/2/3;
+    }
+
+    .navbaLinks1 {
+        grid-area: 1/3/4/4;
+    }
+
+    .navbaLinks2 {
+        grid-area: 1/4/3/5;
+    }
+
+    .socialLinks {
+        grid-area: 3/1/4/3;
+    }
+
+    .feedBacks {
+        grid-area: 3/3/4/5;
+    }
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 480px) {
+
+    .logo>p {
+        font-size: 1.7rem;
+    }
+
+    .communityFrameBox {
+        width: 95%;
+    }
+
+    .clients {
+        gap: 45px;
+    }
+
+    .clients p {
+        text-align: center;
+    }
+
+    .clients .comapnyLogos {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+    }
+
+    .Customers {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Customers>img {
+        float: none;
+        width: 80%;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    .customerFrame {
+        display: block;
+    }
+
+    .footerTopFrame>:first-child {
+        width: 90%;
+        font-size: 1.5rem;
+    }
+
+
+    footer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, auto);
+    }
+
+
+    .footerLogo {
+        grid-area: 1/1/2/3;
+    }
+
+    .socialLinks {
+        grid-area: 2/1/3/3;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .navbaLinks1 {
+        grid-area: 3/1/4/2;
+    }
+
+    .navbaLinks2 {
+        grid-area: 3/2/4/3;
+    }
+
+    .feedBacks {
+        grid-area: 4/1/5/3;
+        margin-top: 20px;
+        justify-self: center;
+        align-items: center;
+    }
+
+    .copyRihts {
+        grid-area: 5/1/6/3;
+        text-align: center;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 375px) {
+    .heroSection {
+        padding-top: 25%;
+    }
+
+    .heroSection .Frame>:first-child {
+        font-size: 2.5rem;
+    }
+
+    .footerTopFrame>:first-child {
+        width: 95%;
+    }
+}
